@@ -1,0 +1,12 @@
+---
+# tasks file for test-role
+---
+package:
+  - name: nginx
+  - state: present
+  - use: auto
+  - name: start nginx
+    service: 
+        name: nginx
+        state: started
+ 
